@@ -53,13 +53,12 @@ CREATE TABLE sales (
   order_id     INTEGER REFERENCES orders,
   product_id   INTEGER REFERENCES products NOT NULL,
   quantity     INTEGER                     NOT NULL CHECK (quantity > 0),
-  actual_price INTEGER REFERENCES products NOT NULL CHECK (actual_price > 0),
-  total_price  INTEGER                     NOT NULL CHECK ( total_price > 0)
+  actual_price INTEGER REFERENCES products NOT NULL CHECK (actual_price > 0)
 );
 
-INSERT INTO sales (order_id, product_id, quantity, actual_price, total_price) VALUES (1, 1, 1, 151700, 151700);
-INSERT INTO sales (order_id, product_id, quantity, actual_price, total_price) VALUES (2, 2, 2, 79360, 158720);
-INSERT INTO sales (order_id, product_id, quantity, actual_price, total_price) VALUES (3, 3, 1, 19360, 19360);
-INSERT INTO sales (order_id, product_id, quantity, actual_price, total_price) VALUES (4, 4, 1, 120360, 120360);
-INSERT INTO sales (order_id, product_id, quantity, actual_price, total_price) VALUES (5, 1, 1, 151700, 151700);
+INSERT INTO sales (order_id, product_id, quantity, actual_price) VALUES (1, 1, 1, 151700);
+INSERT INTO sales (order_id, product_id, quantity, actual_price) VALUES (2, 2, 2, 79360);
+INSERT INTO sales (order_id, product_id, quantity, actual_price) VALUES (3, 3, 1, 19360);
+INSERT INTO sales (order_id, product_id, quantity, actual_price) VALUES (4, 4, 1, 120360);
+INSERT INTO sales (order_id, product_id, quantity, actual_price) VALUES (5, 1, 1, 151700);
 DROP TABLE sales;
