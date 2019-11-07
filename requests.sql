@@ -61,4 +61,3 @@ INSERT INTO sales (order_id, product_id, quantity, actual_price) VALUES (2, 2, 2
 INSERT INTO sales (order_id, product_id, quantity, actual_price) VALUES (3, 3, 1, 19360);
 INSERT INTO sales (order_id, product_id, quantity, actual_price) VALUES (4, 4, 1, 120360);
 INSERT INTO sales (order_id, product_id, quantity, actual_price) VALUES (5, 1, 1, 151700);
-DROP TABLE sales;
