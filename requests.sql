@@ -20,7 +20,7 @@ VALUES ('smartphones', 'Смартфон Apple 11Pro 128GB', 120360);
 
 CREATE TABLE users (
   id    INTEGER PRIMARY KEY  AUTOINCREMENT,
-  login TEXT NOT NULL UNIQUE DEFAULT 'unknown',
+  login TEXT NOT NULL UNIQUE,
   name  TEXT NOT NULL        DEFAULT 'unnamed'
 );
 
